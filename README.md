@@ -6,6 +6,8 @@ Seed Repository to participate in the [Game Off 2018](https://itch.io/jam/game-o
 We are currently [discussing different stories](https://github.com/aawadall/Game-Off-2018/issues/2), please join in
 
 ### Technology
+Started [discussion on Technology Stack here](https://github.com/aawadall/Game-Off-2018/issues/3)
+
 ### Team 
 Looking for [team members](https://github.com/aawadall/Game-Off-2018/issues/1)
 

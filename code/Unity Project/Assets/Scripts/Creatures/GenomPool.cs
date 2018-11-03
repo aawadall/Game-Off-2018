@@ -11,7 +11,7 @@ namespace Creatures
         public static List<Trait> Traits {get; private set;}
         public static void RegisterTrait(Trait trait){
             Traits.Add(trait);
-     }
+        }
 
         public static Trait GetTrait(Guid traitUUID)
         {

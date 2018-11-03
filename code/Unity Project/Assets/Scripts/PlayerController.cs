@@ -44,11 +44,14 @@ public class PlayerController : MonoBehaviour {
         // We move the player a little bit along the line between their position and destination 
         float lambda = Time.deltaTime * speed;
 
-        if ( Vector3.Distance(destination, gameObject.transform.position) <= lambda )
+        if ( Vector3.Distance(destination, gameObject.transform.position) <= 2*lambda )
             moving = false;
 
         if ( moving )
             // Normalize to ensure that we always move at the same speed
-            gameObject.transform.position += lambda * Vector3.Normalize( destination - startPosition ); 
+            gameObject.transform.position += lambda * Vector3.Normalize( destination - startPosition );
+
+        // Set player position to 0 on the z
+        gameObject.transform.position -= new Vector3(0, 0, gameObject.transform.position.z);
     }
 }

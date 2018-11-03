@@ -1,0 +1,3 @@
+C:\Users\Freddie\Documents\GitHub\Game-Off-2018\code\Unity Project\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\Freddie\Documents\GitHub\Game-Off-2018\code\Unity Project\obj\Debug\Assembly-CSharp.csproj.GenerateResource.cache
+C:\Users\Freddie\Documents\GitHub\Game-Off-2018\code\Unity Project\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

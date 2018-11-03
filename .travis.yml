@@ -2,6 +2,6 @@ language: csharp
 mono: none
 dotnet: 2.1.300
 script:
-  - dotnet restore
-  - dotnet build --source ./code/Creatures
+  - dotnet restore ./code/Creatures/Creatures.csproj
+  - dotnet build ./code/Creatures/Creatures.csproj
    

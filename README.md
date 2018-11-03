@@ -1,4 +1,5 @@
 [![Chat on Slack](https://img.shields.io/badge/chat-slack-blue.svg?logo=slack&longCache=true&style=plastic)](https://monstersnursery.slack.com/messages/CDV02R35J/)
+[![Build Status](https://travis-ci.com/aawadall/Game-Off-2018.svg?branch=master)](https://travis-ci.com/aawadall/Game-Off-2018)
 # Game Off 2018
 A Seed Repository to participate in the [Game Off 2018](https://itch.io/jam/game-off-2018)
 

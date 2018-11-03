@@ -14,7 +14,9 @@ You are a mad scientist, working on your lab to breed new species of monsters an
 [Check full story here](https://github.com/aawadall/Game-Off-2018/blob/master/docs/game_story.md)
 
 ### Technology
-Started [discussion on Technology Stack here](https://github.com/aawadall/Game-Off-2018/issues/3)
+it will be C# and Unity
+.NET Core 2.1
+2D interface, console application 
 
 ### Team 
 Looking for [team members](https://github.com/aawadall/Game-Off-2018/issues/1)

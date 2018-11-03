@@ -9,7 +9,8 @@ This game is likely to be written in C#, Unity, and is likely to be 2D console g
 
 ## Game Making 
 ### Game Story
-We are currently [discussing different stories](https://github.com/aawadall/Game-Off-2018/issues/2), please join in
+You are a mad scientist, working on your lab to breed new species of monsters and plants to execute your evel plans.
+[Check full story here](https://github.com/aawadall/Game-Off-2018/blob/master/docs/game_story.md)
 
 ### Technology
 Started [discussion on Technology Stack here](https://github.com/aawadall/Game-Off-2018/issues/3)

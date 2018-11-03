@@ -17,6 +17,7 @@ not only that, you could even expose the offsprings to abnormal environments to 
     - _Comms_: where you dispatch your monsters to perform tasks; this leads to playable missions 
     - _HAB_: where you keep your live monsters, plant food, and feed monsters
     - _Research Files_: where you keep monster and plant DNAs and a profile of each monster/plant 
+    - _Observatory_: from which you can view the outside world and monitor the progress of your monsters. You also go here when choosing                        where to send monsters when dispatching them to perform tasks
 
 ### Game Dynamics 
 You start the game with a basic lab, with basic equipment and basic DNAs to start with.

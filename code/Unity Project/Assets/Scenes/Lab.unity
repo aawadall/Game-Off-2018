@@ -113,6 +113,54 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &66916020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 66916022}
+  - component: {fileID: 66916021}
+  m_Layer: 0
+  m_Name: GenomePool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &66916021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 66916020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eacf4bcf305dfe64ba124767d91714fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traitNames:
+  - Strength
+  - Agility
+  - Flight
+  traitDescriptions:
+  - How strong a creature is.
+  - How nimble and agile a creature is.
+  - How well the creature can fly.
+--- !u!4 &66916022
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 66916020}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,7 +225,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!1 &237259303
 GameObject:
@@ -239,7 +287,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &349165748
 GameObject:
@@ -326,7 +374,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &534669902
 GameObject:
@@ -403,7 +451,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
 --- !u!1 &682397083 stripped
 GameObject:
@@ -422,6 +470,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creatureName: Blue Square
+  flight: 4
+  strength: 5
+  agility: 6
 --- !u!1 &1042395390
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,7 +549,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1042395393
 CircleCollider2D:
@@ -584,7 +635,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4924896178395784, guid: 77f9bae6a7b233340999dd035f29a028, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 33705824456503056, guid: 77f9bae6a7b233340999dd035f29a028,
         type: 2}
@@ -609,6 +660,58 @@ Prefab:
     - target: {fileID: 1476055403528182, guid: 77f9bae6a7b233340999dd035f29a028, type: 2}
       propertyPath: m_Name
       value: AttributeText
+      objectReference: {fileID: 0}
+    - target: {fileID: 114729470247080018, guid: 77f9bae6a7b233340999dd035f29a028,
+        type: 2}
+      propertyPath: m_text
+      value: '<Creature Name>
+
+        <Creature Attributes>'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114729470247080018, guid: 77f9bae6a7b233340999dd035f29a028,
+        type: 2}
+      propertyPath: m_textInfo.characterCount
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 114729470247080018, guid: 77f9bae6a7b233340999dd035f29a028,
+        type: 2}
+      propertyPath: m_textInfo.wordCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114729470247080018, guid: 77f9bae6a7b233340999dd035f29a028,
+        type: 2}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114729470247080018, guid: 77f9bae6a7b233340999dd035f29a028,
+        type: 2}
+      propertyPath: m_textInfo.lineCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114729470247080018, guid: 77f9bae6a7b233340999dd035f29a028,
+        type: 2}
+      propertyPath: m_textInfo.spaceCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114729470247080018, guid: 77f9bae6a7b233340999dd035f29a028,
+        type: 2}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224701984473807992, guid: 77f9bae6a7b233340999dd035f29a028,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 25.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 224701984473807992, guid: 77f9bae6a7b233340999dd035f29a028,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 96.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 224701984473807992, guid: 77f9bae6a7b233340999dd035f29a028,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77f9bae6a7b233340999dd035f29a028, type: 2}
@@ -662,12 +765,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "To Do: \n- Need to try and implement aawadall's Creature script. Need to
-    do the following:\n    - Create a game object for the genome pool and attach the
-    genome pool script - we'll also define the traits we need here. We should make
-    this object a singleton;\n    - Update CreatureController so that we can input
-    values for each trait, and use the genome pool alongside the DNA constructor to
-    create the creature's DNA; \n    - Update the UI with the creature's attributes."
+  m_Text: "To Do: \nHave implemented the Creature DNA code. \nNeed to ensure that
+    attributes only show when creature is being pointed at by mouse. \nAlso need to
+    make use of some concrete instantiations of the 'creature' object."
 --- !u!222 &2087397910
 CanvasRenderer:
   m_ObjectHideFlags: 0

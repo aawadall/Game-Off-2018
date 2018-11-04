@@ -99,6 +99,11 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/Freddie/Documents/GitHub/Game-Off-2018/code/Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    
+    <Reference Include="UnityEngine">
+      <HintPath>C:/ProgramFiles/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
@@ -312,6 +317,11 @@
     <Reference Include="Microsoft.Win32.Primitives">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll</HintPath>
     </Reference>
+    
+    <Reference Include="System">
+      <HintPath>C:/Program Files/Unity/Editer/Data/NetStandard/compat/2.0.0/shims/netstandard/System.dll</HintPath>
+    </Reference>
+    
     <Reference Include="System.AppContext">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll</HintPath>
     </Reference>
@@ -321,6 +331,11 @@
     <Reference Include="System.Collections">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll</HintPath>
     </Reference>
+    
+    <Reference Include="System.Collections.Generic">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Generic.dll</HintPath>
+    </Reference>
+    
     <Reference Include="System.Collections.NonGeneric">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll</HintPath>
     </Reference>

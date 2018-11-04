@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour {
         // We move the player a little bit along the line between their position and destination 
         float lambda = Time.deltaTime * speed;
 
-        if ( Vector3.Distance(destination, gameObject.transform.position) <= 3*lambda )
+        if ( Vector3.Distance(destination, gameObject.transform.position) <= Math.Sqrt( Math.Pow( 0.05, 2) + Math.Pow( 3*lambda , 2 ) ) )
             moving = false;
 
         if ( moving )

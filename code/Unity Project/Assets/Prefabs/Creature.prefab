@@ -23,7 +23,8 @@ GameObject:
   - component: {fileID: 33286787079040194}
   - component: {fileID: 222419581830964308}
   - component: {fileID: 114250460639063642}
-  m_Layer: 9
+  - component: {fileID: 114815481605869976}
+  m_Layer: 11
   m_Name: AttributeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +41,7 @@ GameObject:
   - component: {fileID: 4470377525242930}
   - component: {fileID: 114043263512871470}
   - component: {fileID: 65596945149168012}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Creature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +58,7 @@ GameObject:
   - component: {fileID: 4990881951604972}
   - component: {fileID: 212648146329904416}
   - component: {fileID: 61056547173382678}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +108,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 21675386744372954, guid: 0e5f8397633441a409707252f5eb3065, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -209,8 +210,9 @@ MonoBehaviour:
 
     <Creature Attributes>'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e5f8397633441a409707252f5eb3065, type: 2}
+  m_sharedMaterial: {fileID: 21675386744372954, guid: 0e5f8397633441a409707252f5eb3065,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -234,8 +236,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -301,6 +303,18 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   m_maskType: 0
+--- !u!114 &114815481605869976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1147978951842408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c658d484175c7c44868a1f96852969b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerPushTo: UI
 --- !u!212 &212648146329904416
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -333,8 +347,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1744516299
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0.49261305, g: 0.65832216, b: 0.8490566, a: 1}
@@ -369,6 +383,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.15}
+  m_AnchoredPosition: {x: 0, y: 0.18}
   m_SizeDelta: {x: 96.67, y: 25.33}
   m_Pivot: {x: 0.5, y: 0.5}

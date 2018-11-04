@@ -47,6 +47,12 @@ public class CreatureController : MonoBehaviour {
 
 	}
 
+    private void Update()
+    {
+        // Set the z position equal to 0
+        gameObject.transform.position -= new Vector3(0, 0, gameObject.transform.position.z);
+    }
+
     // Activate the text element when hovering mouse over
     private void OnMouseEnter()
     {

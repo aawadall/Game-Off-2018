@@ -5,6 +5,4 @@ dotnet: 2.1.300
 script:
   - dotnet restore ./code/Creatures/Creatures.csproj
   - dotnet build ./code/Creatures/Creatures.csproj
-  - dotnet restore  ./code/Unity\ Project/Assembly-CSharp.csproj
-  - dotnet build ./code/Unity\ Project/Assembly-CSharp.csproj 
-   
+

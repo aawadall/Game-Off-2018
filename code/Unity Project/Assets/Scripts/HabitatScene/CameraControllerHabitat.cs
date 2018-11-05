@@ -14,11 +14,11 @@ public class CameraControllerHabitat : MonoBehaviour {
         float deltaY = 0;
 
         // Set the camera position on the x axis
-        if ( Input.GetKey("right") && gameObject.transform.position.x > -xBound )
+        if ( Input.GetKey("left") && gameObject.transform.position.x > -xBound )
         {
             deltaX = -cameraSpeed;
         }
-        else if ( Input.GetKey("left") && gameObject.transform.position.x < xBound )
+        else if ( Input.GetKey("right") && gameObject.transform.position.x < xBound )
         {
             deltaX = cameraSpeed;
         }

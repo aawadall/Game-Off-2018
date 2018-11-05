@@ -9,4 +9,17 @@ public class HabitatInteract : Interactable {
         SceneManager.LoadScene("Habitat");
     }
 
+    // Override onMouseEnter/Exit to output text to the UI 
+    protected override void OnMouseEnter()
+    {
+        base.OnMouseEnter();
+
+        SceneController.Instance.activateTextPanel( "Click here to view your creature habitat." );
+    }
+    protected override void OnMouseExit()
+    {
+        base.OnMouseExit();
+
+        SceneController.Instance.deactivateTextPanel();
+    }
 }

@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour {
             // Whatever it hits, move there if we click 
             if( Input.GetButtonDown("Fire1") )
             {
-                // See if we've clicked the ground 
+                // See if we've clicked the ground (walkable layer)
                 if (hit.collider.gameObject.layer == 10)
                 {
                     moving = true;

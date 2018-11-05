@@ -40,6 +40,7 @@ public class CreatureController : MonoBehaviour {
         // Update nameText so that it records the creature's name and attributes
         attributeText = GetComponentInChildren<TMPro.TextMeshPro>();
 
+        // set attribute text 
         attributeText.text = creatureName;
         foreach ( Genom genom in creatureDNA.Genoms )
         {
@@ -48,7 +49,6 @@ public class CreatureController : MonoBehaviour {
 
         // Initially set inactive 
         attributeText.gameObject.SetActive(false);
-
 	}
 
     // Movement
@@ -69,6 +69,7 @@ public class CreatureController : MonoBehaviour {
 
         // Set the z position equal to 0
         gameObject.transform.position -= new Vector3(0, 0, gameObject.transform.position.z);
+
         // Set the position inside scene bounds 
         if ( System.Math.Abs( gameObject.transform.position.x ) > SceneController.Instance.xBound )
         {
@@ -80,9 +81,9 @@ public class CreatureController : MonoBehaviour {
         if (System.Math.Abs(gameObject.transform.position.y) > SceneController.Instance.yBound)
         {
             if (gameObject.transform.position.y > 0)
-                gameObject.transform.position = new Vector3(gameObject.transform.position.y, SceneController.Instance.yBound);
+                gameObject.transform.position = new Vector3(gameObject.transform.position.x, SceneController.Instance.yBound);
             else if (gameObject.transform.position.y < 0)
-                gameObject.transform.position = new Vector3(gameObject.transform.position.y, -SceneController.Instance.yBound);
+                gameObject.transform.position = new Vector3(gameObject.transform.position.x, -SceneController.Instance.yBound);
         }
 
 
@@ -102,9 +103,13 @@ public class CreatureController : MonoBehaviour {
     private void OnMouseEnter()
     {
         attributeText.gameObject.SetActive(true);
+        // Set UIText 
+        SceneController.Instance.activateTextPanel( attributeText.text );
     }
     private void OnMouseExit()
     {
         attributeText.gameObject.SetActive(false);
+        // Reset UIText
+        SceneController.Instance.deactivateTextPanel();
     }
 }

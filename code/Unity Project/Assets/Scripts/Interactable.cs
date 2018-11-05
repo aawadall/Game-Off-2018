@@ -23,16 +23,14 @@ public class Interactable : MonoBehaviour {
 
     // Virtual method for interaction, overriden in children 
     public virtual void interact()
-    {
-        Debug.Log(gameObject.name); // For testing 
-    }
+    {}
 
     // Set 'entered' 
-    private void OnMouseEnter()
+    protected virtual void OnMouseEnter()
     {
         entered = true;
     }
-    private void OnMouseExit()
+    protected virtual void OnMouseExit()
     {
         entered = false;
     }

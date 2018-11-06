@@ -8,7 +8,7 @@ namespace Creatures
     /// </summary>
     public class DNA
     {
-        public List<Genom> Genoms {get; private set;}
+        public List<Genom> Genoms { get; private set; } = new List<Genom>();
         public string Name {get; private set;}
         public Guid ID {get; private set;}
         public DNA(List<Genom> genoms, string name)
@@ -17,7 +17,7 @@ namespace Creatures
             this.Name = name;
             foreach(Genom g in genoms)
             {
-                this.Genoms.Add(g);
+                Genoms.Add(g);
             }
         }
     }

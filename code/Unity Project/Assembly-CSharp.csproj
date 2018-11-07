@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scenes\README.txt.cs" />
     <Compile Include="Assets\Scripts\Creatures\Class1.cs" />
     <Compile Include="Assets\Scripts\Creatures\Creature.cs" />
     <Compile Include="Assets\Scripts\Creatures\CreatureController.cs" />
@@ -67,9 +68,17 @@
     <Compile Include="Assets\Scripts\Creatures\Genom.cs" />
     <Compile Include="Assets\Scripts\Creatures\GenomPool.cs" />
     <Compile Include="Assets\Scripts\Creatures\Trait.cs" />
+    <Compile Include="Assets\Scripts\GlobalController.cs" />
+    <Compile Include="Assets\Scripts\HabitatScene\CameraControllerHabitat.cs" />
+    <Compile Include="Assets\Scripts\HabitatScene\HabitatSceneController.cs" />
+    <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\LabScene\CameraController.cs" />
+    <Compile Include="Assets\Scripts\LabScene\Interactables\HabitatInteract.cs" />
+    <Compile Include="Assets\Scripts\LabScene\LabSceneController.cs" />
     <Compile Include="Assets\Scripts\LabScene\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\LoadNewScene.cs" />
     <Compile Include="Assets\Scripts\PushAboveSprites.cs" />
+    <Compile Include="Assets\Scripts\SceneController.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
@@ -99,11 +108,6 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/Freddie/Documents/GitHub/Game-Off-2018/code/Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    
-    <Reference Include="UnityEngine">
-      <HintPath>C:/ProgramFiles/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
-    </Reference>
-    
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
@@ -317,11 +321,6 @@
     <Reference Include="Microsoft.Win32.Primitives">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll</HintPath>
     </Reference>
-    
-    <Reference Include="System">
-      <HintPath>C:/Program Files/Unity/Editer/Data/NetStandard/compat/2.0.0/shims/netstandard/System.dll</HintPath>
-    </Reference>
-    
     <Reference Include="System.AppContext">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll</HintPath>
     </Reference>
@@ -331,11 +330,6 @@
     <Reference Include="System.Collections">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll</HintPath>
     </Reference>
-    
-    <Reference Include="System.Collections.Generic">
-      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Generic.dll</HintPath>
-    </Reference>
-    
     <Reference Include="System.Collections.NonGeneric">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll</HintPath>
     </Reference>

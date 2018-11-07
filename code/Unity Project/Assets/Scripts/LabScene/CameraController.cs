@@ -30,7 +30,7 @@ public class CameraController : MonoBehaviour {
         }
 
         // Ensure that the camera's position agrees with the player's 
-        gameObject.transform.position = playerTransform.position + new Vector3(0f, 0f, (float) (1 / zoom) );
+        gameObject.transform.position = playerTransform.position + new Vector3(0f, 0f, (float) (-1 / zoom) );
 
 	}
 }

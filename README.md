@@ -3,10 +3,11 @@
 # Game Off 2018
 A Seed Repository to participate in the [Game Off 2018](https://itch.io/jam/game-off-2018)
 
-There are some openios to name this game __Monster Nursery__ since this game is about breeding monsters to acheive tasks. It is more of a realtime strategy game, with lots of mini-games attached to it.
+This game is named __Monster Nursery__ since it is about breeding monsters to acheive tasks. It is, at heart, a realtime strategy game, with lots of mini-games attached to it.
 
-We are currently in Game Story phase, and once it is decided, we will move towards assets preparation, then code development. 
-This game is likely to be written in C#, Unity, and is likely to be 2D console game, with some chances of porting it to a web interface. 
+We have passed Game Story phane, and are entering the development and asset preparation stages. 
+
+This game is written in C#, Unity, and is a 2D console game, with some chances of porting it to a web interface. 
 
 ## Game Making 
 ### Game Story

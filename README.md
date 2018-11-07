@@ -15,7 +15,6 @@ You are a mad scientist, working on your lab to breed new species of monsters an
 
 ### Technology
 it will be C# and Unity
-.NET Core 2.1
 2D interface, console application 
 
 ### Team 

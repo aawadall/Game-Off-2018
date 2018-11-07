@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
+// Script is added to button objects to change scene when clicked
 public class LoadNewScene : MonoBehaviour {
 
     public string sceneName;
 
     public void loadNewScene()
     {
-        SceneManager.LoadScene(sceneName);
+        GlobalController.Instance.ChangeScene(sceneName);
     }
 }

@@ -1,6 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+
+// Each scene has its own child of SceneController. 
+// This deals with scene-specific elements 
+// e.g. LabSceneController hides the dialogue UI panel, whereas HabitatSceneController doesn't 
 
 public class SceneController : MonoBehaviour {
 

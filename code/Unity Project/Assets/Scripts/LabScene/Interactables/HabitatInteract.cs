@@ -6,7 +6,7 @@ public class HabitatInteract : Interactable {
     // Place the Habitat functions here 
     public override void interact()
     {
-        SceneManager.LoadScene("Habitat");
+        GlobalController.Instance.ChangeScene("Habitat");
     }
 
     // Override onMouseEnter/Exit to output text to the UI 

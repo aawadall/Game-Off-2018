@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scenes\README.txt.cs" />
     <Compile Include="Assets\Scripts\Creatures\Class1.cs" />
     <Compile Include="Assets\Scripts\Creatures\Creature.cs" />
     <Compile Include="Assets\Scripts\Creatures\CreatureController.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="Assets\Scripts\Creatures\Genom.cs" />
     <Compile Include="Assets\Scripts\Creatures\GenomPool.cs" />
     <Compile Include="Assets\Scripts\Creatures\Trait.cs" />
+    <Compile Include="Assets\Scripts\GlobalController.cs" />
     <Compile Include="Assets\Scripts\HabitatScene\CameraControllerHabitat.cs" />
     <Compile Include="Assets\Scripts\HabitatScene\HabitatSceneController.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />

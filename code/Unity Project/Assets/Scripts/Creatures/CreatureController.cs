@@ -102,14 +102,14 @@ public class CreatureController : MonoBehaviour {
     // Activate the text element when hovering mouse over
     private void OnMouseEnter()
     {
+        // Set text above creature
         attributeText.gameObject.SetActive(true);
         // Set UIText 
         SceneController.Instance.activateTextPanel( attributeText.text );
     }
     private void OnMouseExit()
     {
+        // Remove text above creature
         attributeText.gameObject.SetActive(false);
-        // Reset UIText
-        SceneController.Instance.deactivateTextPanel();
     }
 }

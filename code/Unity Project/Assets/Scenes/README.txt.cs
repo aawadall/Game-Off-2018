@@ -7,7 +7,7 @@
  * 
  * - Add a SceneController (use prefab) - but swap the SceneController script attached with a SceneController instantiation 
  *     specific to the scene you're building (e.g. if building Lab, write a LabSceneController : SceneController script and 
- *     swap that with the SceneController component of the prefab);
+ *     swap that with the SceneController component of the prefab). Also don't forget to add a BackToLabButton if you need to;
  *     
  * - Add a GenomePool (use the prefab);
  * 

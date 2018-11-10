@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Creatures\Class1.cs" />
     <Compile Include="Assets\Scripts\Creatures\Creature.cs" />
     <Compile Include="Assets\Scripts\Creatures\CreatureController.cs" />
+    <Compile Include="Assets\Scripts\Creatures\CreatureInteract.cs" />
     <Compile Include="Assets\Scripts\Creatures\DNA.cs" />
     <Compile Include="Assets\Scripts\Creatures\Genom.cs" />
     <Compile Include="Assets\Scripts\Creatures\GenomPool.cs" />

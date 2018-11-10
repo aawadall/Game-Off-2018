@@ -11,6 +11,7 @@ public class HabitatSceneController : SceneController {
 
         UIText.text = "Use the arrow keys to move around.\r\nHighlight your creatures with the mouse to inspect them.";
         UIText.gameObject.SetActive(true);
-    }
 
+        YesNoButtons.SetActive(false);
+    }
 }

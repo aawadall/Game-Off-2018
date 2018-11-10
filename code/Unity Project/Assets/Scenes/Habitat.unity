@@ -113,6 +113,27 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &62491523 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1612670670973756, guid: 3dd128c2290eabf44b37bbe4f0f7da2d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1106243686}
+--- !u!1 &79339098 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1509090688922090, guid: 77f9bae6a7b233340999dd035f29a028,
+    type: 2}
+  m_PrefabInternal: {fileID: 761321206}
+--- !u!114 &79339102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 79339098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ac07bee504ec4545b2b07435bc735fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &151712512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1945,11 +1966,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4470377525242930, guid: 77f9bae6a7b233340999dd035f29a028, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.42
+      value: -0.32
       objectReference: {fileID: 0}
     - target: {fileID: 4470377525242930, guid: 77f9bae6a7b233340999dd035f29a028, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.27
+      value: 0.22
       objectReference: {fileID: 0}
     - target: {fileID: 4470377525242930, guid: 77f9bae6a7b233340999dd035f29a028, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2164,6 +2185,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &801316548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1093743737545392, guid: 3dd128c2290eabf44b37bbe4f0f7da2d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1106243686}
+--- !u!114 &801316549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801316548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4a114a70b9178428ed51d747fb947e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  YesNoButtons: {fileID: 1935415038}
+  textPanel: {fileID: 62491523}
+  frozen: 0
+  xBound: 1
+  yBound: 0.5
 --- !u!1001 &802504632
 Prefab:
   m_ObjectHideFlags: 0
@@ -2203,14 +2245,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1509090688922090, guid: 77f9bae6a7b233340999dd035f29a028, type: 2}
-      propertyPath: m_Name
-      value: BlueSquare
-      objectReference: {fileID: 0}
     - target: {fileID: 33286787079040194, guid: 77f9bae6a7b233340999dd035f29a028,
         type: 2}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1509090688922090, guid: 77f9bae6a7b233340999dd035f29a028, type: 2}
+      propertyPath: m_Name
+      value: BlueSquare
       objectReference: {fileID: 0}
     - target: {fileID: 114250460639063642, guid: 77f9bae6a7b233340999dd035f29a028,
         type: 2}
@@ -2264,6 +2306,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114577538538341348, guid: 3dd128c2290eabf44b37bbe4f0f7da2d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1106243688}
     - target: {fileID: 114370695162728982, guid: 3dd128c2290eabf44b37bbe4f0f7da2d,
         type: 2}
       propertyPath: m_havePropertiesChanged
@@ -2284,9 +2331,57 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114796630476719448, guid: 3dd128c2290eabf44b37bbe4f0f7da2d,
+        type: 2}
+      propertyPath: xBound
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796630476719448, guid: 3dd128c2290eabf44b37bbe4f0f7da2d,
+        type: 2}
+      propertyPath: yBound
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114314754001260276, guid: 3dd128c2290eabf44b37bbe4f0f7da2d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 801316549}
+    - target: {fileID: 114314754001260276, guid: 3dd128c2290eabf44b37bbe4f0f7da2d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: wipeTextPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577538538341348, guid: 3dd128c2290eabf44b37bbe4f0f7da2d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: loadNewScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577538538341348, guid: 3dd128c2290eabf44b37bbe4f0f7da2d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114796630476719448, guid: 3dd128c2290eabf44b37bbe4f0f7da2d, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 3dd128c2290eabf44b37bbe4f0f7da2d, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1106243687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1553167691758850, guid: 3dd128c2290eabf44b37bbe4f0f7da2d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1106243686}
+--- !u!114 &1106243688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1106243687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12fa4464fd2b1f0428b24310f4ddcf45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Minigame1
 --- !u!1 &1608454540
 GameObject:
   m_ObjectHideFlags: 0
@@ -2349,6 +2444,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1935415038 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1235079377948422, guid: 3dd128c2290eabf44b37bbe4f0f7da2d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1106243686}
 --- !u!1001 &1984029586
 Prefab:
   m_ObjectHideFlags: 0

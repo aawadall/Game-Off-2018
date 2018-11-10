@@ -28,4 +28,8 @@ it will be C# and Unity
 Looking for [team members](https://github.com/aawadall/Game-Off-2018/issues/1)
 
 ## Using the Game
+We haven't finished implementing the gameplay yet, but we have made some progress: 
+
+![Alt text](/screenshots/Lab-10-11-18.png?raw=true "The player's Lab")
+
 

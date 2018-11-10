@@ -9,14 +9,25 @@ public class PlayerController : MonoBehaviour {
     private Vector3 startPosition;
     private Vector3 destination;
     private bool moving;
+    public bool frozen; // See if player can move or not
     private GameObject currentSelection;
     public float speed;
+
+    // Implement singleton Instance 
+    public static PlayerController Instance;
 
     private void Awake()
     {
         startPosition = new Vector3(); // Used to ensure that movement speed is linear
         destination = new Vector3();
         moving = false;
+        frozen = false;
+
+        // Singleton stuff 
+        if (Instance == null)
+            Instance = this;
+        else if (Instance != this)
+            Destroy(gameObject);
     }
 
     // Update is called once per frame
@@ -32,8 +43,8 @@ public class PlayerController : MonoBehaviour {
             // Whatever it hits, move there if we click 
             if( Input.GetButtonDown("Fire1") )
             {
-                // See if we've clicked the ground (walkable layer)
-                if (hit.collider.gameObject.layer == 10)
+                // See if we've clicked the ground (walkable layer), and if we're not frozen
+                if (hit.collider.gameObject.layer == 10 && !frozen)
                 {
                     moving = true;
                     // change destination and startPosition

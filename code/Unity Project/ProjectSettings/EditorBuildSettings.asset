@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Habitat.unity
     guid: 98ed83318f3cff24f84167c35462544f
+  - enabled: 1
+    path: Assets/Scenes/Minigame1.unity
+    guid: b582c4499951776449160ddba22f6373
   m_configObjects: {}

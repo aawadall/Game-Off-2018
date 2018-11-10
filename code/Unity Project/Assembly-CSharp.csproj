@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Creatures\Class1.cs" />
     <Compile Include="Assets\Scripts\Creatures\Creature.cs" />
     <Compile Include="Assets\Scripts\Creatures\CreatureController.cs" />
+    <Compile Include="Assets\Scripts\Creatures\CreatureInteract.cs" />
     <Compile Include="Assets\Scripts\Creatures\DNA.cs" />
     <Compile Include="Assets\Scripts\Creatures\Genom.cs" />
     <Compile Include="Assets\Scripts\Creatures\GenomPool.cs" />
@@ -73,7 +74,10 @@
     <Compile Include="Assets\Scripts\HabitatScene\HabitatSceneController.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\LabScene\CameraController.cs" />
+    <Compile Include="Assets\Scripts\LabScene\Interactables\CPUInteract.cs" />
+    <Compile Include="Assets\Scripts\LabScene\Interactables\CPUScreenController.cs" />
     <Compile Include="Assets\Scripts\LabScene\Interactables\HabitatInteract.cs" />
+    <Compile Include="Assets\Scripts\LabScene\Interactables\TurnOffCPUButton.cs" />
     <Compile Include="Assets\Scripts\LabScene\LabSceneController.cs" />
     <Compile Include="Assets\Scripts\LabScene\PlayerController.cs" />
     <Compile Include="Assets\Scripts\LoadNewScene.cs" />

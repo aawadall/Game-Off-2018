@@ -28,4 +28,10 @@ it will be C# and Unity
 Looking for [team members](https://github.com/aawadall/Game-Off-2018/issues/1)
 
 ## Using the Game
+We haven't finished implementing the gameplay yet, nor have we designed any art assets, but we have made some progress: 
 
+![Alt text](/screenshots/Lab-10-11-18.png?raw=true "The player's Lab, which acts as a hub for the game.")
+
+![Alt text](/screenshots/Habitat-10-11-18.png?raw=true "The player's Habitat, where they keep the creatures they own.")
+
+![Alt text](/screenshots/CPU-10-11-18.png?raw=true "The player's CPU, which they can use to do shopping or to check their emails.")
